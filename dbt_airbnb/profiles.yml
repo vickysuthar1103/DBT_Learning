@@ -1,0 +1,24 @@
+dbt_airbnb:
+  outputs:
+    dev:
+      account: RGNHIMN-NJ64245
+      database: AIRBNB
+      password: Dbtlearning@1992
+      role: ACCOUNTADMIN
+      schema: dbt_schema
+      threads: 1
+      type: snowflake
+      user: VICKY1103
+      warehouse: COMPUTE_WH
+  target: dev
+dbt_practise:
+  outputs:
+    dev:
+      catalog: dbt_dev
+      host: dbc-f4706084-f176.cloud.databricks.com
+      http_path: /sql/1.0/warehouses/8f78662d5b819a2c
+      schema: default
+      threads: 1
+      token: dapid5b3d6e86a70e0190acaba624bef00f9
+      type: databricks
+  target: dev
